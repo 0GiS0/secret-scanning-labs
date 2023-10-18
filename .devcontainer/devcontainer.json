@@ -16,7 +16,10 @@
 			"settings": {
 
 			},
-			"extensions": []
+			"extensions": [
+				"GitHub.copilot",
+				"GitHub.copilot-chat"
+			]
 		}
 }
 
