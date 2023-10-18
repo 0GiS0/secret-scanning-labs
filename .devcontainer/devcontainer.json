@@ -8,7 +8,17 @@
 	},
 	"features": {
 		
-	}
+	},
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+
+			},
+			"extensions": []
+		}
+}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
