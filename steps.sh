@@ -1,5 +1,5 @@
 #### Gitleaks ####
-gitleaks detect --source . --redact
+gitleaks detect 
 gitleaks protect -v
 
 #### detect-secrets ###
