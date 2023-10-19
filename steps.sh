@@ -1,7 +1,3 @@
-#### Gitleaks ####
-gitleaks detect --no-git
-gitleaks protect -v
-
 #### detect-secrets ###
 detect-secrets scan
 

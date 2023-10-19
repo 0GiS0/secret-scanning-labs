@@ -2,19 +2,22 @@
 ARG VARIANT=debian-11
 FROM mcr.microsoft.com/devcontainers/base:${VARIANT}
 WORKDIR /src
+
 # Install Prerrequisites
 RUN apt-get update \
-    && apt-get install build-essential procps curl file git --no-install-recommends -y \
-    # && curl -sSfL https://raw.githubusercontent.com/trufflesecurity/trufflehog/main/scripts/install.sh | sh -s -- -b /usr/local/bin \
+    && apt-get install build-essential procps curl file git --no-install-recommends -y \    
     && rm -rf /var/lib/apt/lists/* 
+
 USER vscode
+
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)" && \
     sudo chown -R vscode /home/linuxbrew/.linuxbrew/Cellar
+
 # USER vscode
 ENV PATH="/home/linuxbrew/.linuxbrew/bin:${PATH}"
+
 # Install tools
 RUN brew install \
-gitleaks \
 detect-secrets \
 gitguardian/tap/ggshield \
 trufflesecurity/trufflehog/trufflehog
