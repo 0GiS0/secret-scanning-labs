@@ -16,4 +16,5 @@ ENV PATH="/home/linuxbrew/.linuxbrew/bin:${PATH}"
 RUN brew install \
 gitleaks \
 detect-secrets \
-gitguardian/tap/ggshield
+gitguardian/tap/ggshield \
+trufflesecurity/trufflehog/trufflehog
