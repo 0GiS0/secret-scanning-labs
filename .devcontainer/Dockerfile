@@ -19,5 +19,5 @@ ENV PATH="/home/linuxbrew/.linuxbrew/bin:${PATH}"
 # Install tools
 RUN brew install \
 detect-secrets \
-gitguardian/tap/ggshield \
-trufflesecurity/trufflehog/trufflehog
+trufflesecurity/trufflehog/trufflehog \
+gitguardian/tap/ggshield
